@@ -1,0 +1,136 @@
+.spinner-block {
+  width: 33.333333%;
+  margin:0 auto;
+  padding: 50px 0;
+  
+  display: -webkit-box;
+  
+  display: -ms-flexbox;
+  
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Spinner {
+  display: inline;
+}
+
+.Spinner--small {
+  font-size: 1rem;
+}
+
+.Spinner--medium {
+  font-size: 3rem;
+}
+
+.Spinner--large {
+  font-size: 6rem;
+}
+
+.Spinner--pink .Spinner_cell {
+  background: #ff7473;
+}
+
+.Spinner--yellow .Spinner_cell {
+  background: #ffc952;
+}
+
+.Spinner--blue .Spinner_cell {
+  background: #47b8e0;
+}
+
+.Spinner_cell {
+  background: #fff;
+  
+  width: .333333333em;
+  height: .333333333em;
+  float: left;
+  
+  -webkit-animation-name: spinnerScale;
+  
+          animation-name: spinnerScale;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.Spinner_cell:nth-child(3n+1) {
+  clear: both;
+}
+
+.Spinner_cell:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.Spinner_cell:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.Spinner_cell:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.Spinner_cell:nth-chlid(4) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.Spinner_cell:nth-child(5) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.Spinner_cell:nth-child(6) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.Spinner_cell:nth-child(7) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.Spinner_cell:nth-child(8) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.Spinner_cell:nth-child(9) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+@-webkit-keyframes spinnerScale {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1,1,1);
+            transform: scale3D(1,1,1);
+  }
+  
+  35% {
+    -webkit-transform: scale3D(0,0,1);
+            transform: scale3D(0,0,1);
+  }
+}
+
+@keyframes spinnerScale {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1,1,1);
+            transform: scale3D(1,1,1);
+  }
+  
+  35% {
+    -webkit-transform: scale3D(0,0,1);
+            transform: scale3D(0,0,1);
+  }
+}
